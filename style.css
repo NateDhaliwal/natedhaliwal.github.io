@@ -4,21 +4,14 @@ html {
 }
 
 body {
-  background-color: #ccfff9;
+  background-color: linear-gradient(#55680D, #71F53E, #116C31);;
   text-align: center;
-  animation: ease-in-out moveUp 1s forwards;
 }
 
 p {
-  color: blue;
+  color: white;
 }
 
 h1 {
-  color: #ff0000;
-}
-
-@keyframes moveUp {
-  0% { opacity: 0; transform: translateY(10em); }
-  75% { opacity: 0.75; transform: translateY(-0.5em); }
-  100% { opacity: 1; transform: translateY(0em); }
+  color: white;
 }
