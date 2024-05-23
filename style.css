@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #ccfff9;
+  text-align: center;
+  animation: ease-in-out moveUp 1s forwards;
+}
+
+p {
+  color: blue;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+@keyframes moveUp {
+  0% { opacity: 0; transform: translateY(10em); }
+  75% { opacity: 0.75; transform: translateY(-0.5em); }
+  100% { opacity: 1; transform: translateY(0em); }
+}
