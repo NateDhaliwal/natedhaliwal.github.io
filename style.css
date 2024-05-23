@@ -4,14 +4,22 @@ html {
 }
 
 body {
-  background-color: linear-gradient(#55680D, #71F53E, #116C31);;
+  background-color: blue;
   text-align: center;
 }
 
-p {
-  color: white;
+p, h1, li {
+  color: #ffffff;
 }
 
-h1 {
-  color: white;
+ol {
+  list-style-type: circle;
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  color: greenyellow
 }
