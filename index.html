@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content:"width:device-width">
   <title>About @NateDhaliwal</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+  window.addEventListener('click', function (e) {
+    let xpos = e.clientX;
+    let ypos = e.clientY;
+    console.log(xpos,ypos)
+    confetti({
+      particleCount: 200,
+      spread: 360,
+      origin: { y: ypos/window.innerHeight , x: xpos/window.innerWidth },
+    });
+  });
+</script>
 <h1>Who am I?</h1>
 <p>I am @NateDhaliwal on Replit and Replit Ask, as well as @natme6677 on Scratch.</p>
-<p>I code with Python, HTML, CSS, Scratch, MIT App Inventor, BBC Micro:bit, Microsoft MakeCode Arcade (I'm a bit rusty on that one) and CoSpaces!<br>I'm also starting on JavaScript and C++!</p>
-<p>I'm also working on a Flask forum for <a href='https://code.amsilla.com'>Amsilla Code</a>!</p>
+<p>I code with Python, HTML, CSS, MIT App Inventor!</p>
+<p>I'm starting on JavaScript and C++!</p>
+<p>I'm also working on a Flask forum for <a href:'https://code.amsilla.com'>Amsilla Code</a>!</p>
   
 <h1>My projects</h1>
 <ul>
   <li>
-    <a href="https://replit.com/@NateDhaliwal/Jackpot">Jackpot! - My best game</a>
+    <a href="https://replit.com/@NateDhaliwal/Jackpot?v=1">Jackpot! - My best game</a>
   </li>
   <li>
     <a href="https://replit.com/@NateDhaliwal/Email-sender-For-gmail-sender?v=1">Email sender for Gmail - My most complex program</a>
@@ -33,7 +45,7 @@
 <h1>Some facts about me!</h1>
 <ol>
   <li>
-    I only started Python and HTML in 2023, but I'm a fast learner and I completed Replit's <a href="https://replit.com/learn/100-days-of-python/hub?utm_source=widget">100 Days Of Code</a> course!
+    I only started Python and HTML in 2023, but I'm a fast learner and I completed Replit's <a href="https://replit.com/learn/100-days-of-python/hub?utm_source:widget">100 Days Of Code</a> course!
   </li>
   <br>
   <li>
