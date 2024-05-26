@@ -25,6 +25,7 @@ p, li {
 
 a {
   font-family: Lucida Console, josefin sans, sans-serif;
+  color: greenyellow;
 }
 
 p, h1, li {
@@ -39,6 +40,11 @@ ul {
   list-style-type: square;
 }
 
-a {
-  color: greenyellow
+button, iframe {
+  background-color: transparent;
+  color: white;
+  font-family: Lucida Console, josefin sans, sans-serif;
+  border: 2px solid royalblue;
+  cursor: pointer;
+  border-radius: 5px;
 }
