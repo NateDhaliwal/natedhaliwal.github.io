@@ -12,39 +12,62 @@ html {
 }
 
 body {
-  background-color: blue;
+  background-color: black;
 }
 
 h1 {
-  font-family: kode mono, monospace; 
+  font-family: kode mono, monospace;
+  color: #ffffff;
 }
 
 p, li {
   font-family: josefin sans, sans-serif;
+  color: #ffffff;
 }
 
 a {
   font-family: Lucida Console, josefin sans, sans-serif;
-  color: greenyellow;
-}
-
-p, h1, li {
-  color: #ffffff;
+  color: white;
 }
 
 ol {
-  list-style-type: circle;
+  list-style: none;
 }
 
 ul {
-  list-style-type: square;
+  list-style: none;
 }
 
 button, iframe {
   background-color: transparent;
   color: white;
   font-family: Lucida Console, josefin sans, sans-serif;
-  border: 2px solid royalblue;
+  border: 2px solid white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+div.wrapper {
+  position: relative;
+}
+
+div.content {
+  background-color: transparent;
+  color: snow;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  top: 40%;
+  width: 100%;
+  z-index: 100;
+}
+
+div.flex-table {
+  display: flex;
+}
+
+img {
+  height: 50px;
+  width: 50px;
 }

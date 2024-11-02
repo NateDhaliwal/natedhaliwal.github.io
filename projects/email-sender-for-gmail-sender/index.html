@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content:"width:device-width">
+  <title>Email sender for Gmail sender</title>
+  <link href="/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class='wrapper'>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3.0.2/tsparticles.preset.links.bundle.min.js"></script>
+    <script type="text/javascript">
+      (async () => {
+          await tsParticles.load({
+            id: "tsparticles",
+            options: { preset: "links" },
+            background: {
+              "color": {"value":"#0d47a1"}
+            }
+          });
+      })();      
+
+    </script>
+    <div class='content'>
+      <button onclick='window.location.href="/"'>Back</button>
+      <h1>Email sender for Gmail sender</h1>
+      <iframe src='https://replit.com/@NateDhaliwal/Email-sender-For-gmail-sender?embed=true' width='100%' height='600'></iframe>
+    </div>
+  </div>
+</body>
+</html>

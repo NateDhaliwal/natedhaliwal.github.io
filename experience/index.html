@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <link href="/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class='wrapper'>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3.0.2/tsparticles.preset.links.bundle.min.js"></script>
+    <script type="text/javascript">
+      (async () => {
+          await tsParticles.load({
+            id: "tsparticles",
+            options: { preset: "links" },
+            background: {
+              "color": {"value":"#0d47a1"}
+            }
+          });
+      })();      
+
+    </script>
+    <div class='content'>
+      <div class='flex-table'>
+        <div style='order: 1; flex-shrink: 1;'>
+          <img src='/uploads/Python_logo.png' alt='Python logo'/>
+          <p>Python</p>
+        </div>
+        <div style='order: 2; flex-shrink: 1;'>
+          <img src='/uploads/Jinja_icon.png' alt='Jinja logo'/>
+          <p>Jinja</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
