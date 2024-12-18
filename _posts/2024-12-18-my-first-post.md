@@ -1,3 +1,9 @@
+---
+layout: post
+title: My First Post!
+categories: general
+---
+
 <h1>Hi there, I'm NateDhaliwal!</h1>
 
 I'm NateDhaliwal. I'm starting this blog today! Allow me to introduce myself.
