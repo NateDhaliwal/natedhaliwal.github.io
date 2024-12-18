@@ -1,7 +1,6 @@
 title: NateDhaliwal's Blog
 author:
   name: NateDhaliwal
-  email: your-email@domain.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -69,4 +68,7 @@ minima:
   #  - { platform: x,              user_url: "https://x.com/jekyllrb" }
   #  - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
-
+header-pages:
+  - tags
+  - about
+  - categories
