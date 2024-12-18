@@ -32,12 +32,12 @@ layout: base
           </a>
         </h3>
         Category:
-        <a class='category-link' href="{{ '/categories#{{ post.category }}' | absolute_url }}">
+        <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}' | absolute_url }}">
           {{ post.category }}
         </a>
         Tags:
         {% for tag in post.tags %}
-          <a class='tag-link' href="{{ '/tags#{{ tag }}' | absolute_url }}">
+          <a class='tag-link' href="{{ '/tags' | absolute_url }}#{{ tag }}">
             {{ tag }}
           </a>
         {% endfor %}
