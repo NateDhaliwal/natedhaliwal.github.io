@@ -35,6 +35,7 @@ layout: base
         <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}">
           {{ post.category }}
         </a>
+        {{ post.tags }}
         {% if post.tags != [] %}
           Tags:
           {% for tag in post.tags %}
