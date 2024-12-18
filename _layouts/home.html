@@ -31,14 +31,17 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
+        Category:
         <a class='category-link' href='/categories#{{ post.category }}'>
           {{ post.category }}
         </a>
+        Tags:
         {% for tag in post.tags %}
           <a class='tag-link' href='/tags#{{ tag }}'>
             {{ tag }}
           </a>
         {% endfor %}
+        <br>
         {%- if site.show_excerpts -%}
           {{ post.excerpt | strip_html | truncatewords: 50 }}
         {%- endif -%}
