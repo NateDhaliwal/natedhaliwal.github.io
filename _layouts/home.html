@@ -25,12 +25,17 @@ layout: base
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">Posted on {{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
+        {% for tag in post.tags %}
+          <a class='tag-link' href='/tags/#{{ tag }}'>
+            {{ tag }}
+          </a>
+        {% endfor %}
         {%- if site.show_excerpts -%}
           {{ post.excerpt | strip_html | truncatewords: 50 }}
         {%- endif -%}
