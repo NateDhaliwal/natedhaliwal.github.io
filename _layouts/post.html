@@ -23,7 +23,17 @@ layout: base
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
-      {%- endif -%}</p>
+      {%- endif -%}
+      • In <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}' | absolute_url }}">
+          {{ page.category }}
+      </a>
+      • Tags:
+      {% for tag in post.tags %}
+          <a class='tag-link' href="{{ '/tags' | absolute_url }}#{{ tag }}">
+            {{ tag }}
+          </a>
+      {% endfor %}
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
