@@ -3,6 +3,7 @@ title: My First Post!
 layout: post
 author: NateDhaliwal
 category: general
+readtime: true
 ---
 
 <h1>Hi there, I'm NateDhaliwal!</h1>
