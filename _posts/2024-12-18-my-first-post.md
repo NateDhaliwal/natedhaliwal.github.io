@@ -1,7 +1,8 @@
 ---
 layout: post
 title: My First Post!
-categories: general
+category: general
+tags: [unimportant]
 ---
 
 <h1>Hi there, I'm NateDhaliwal!</h1>
