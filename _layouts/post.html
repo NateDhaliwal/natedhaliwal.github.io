@@ -24,12 +24,12 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}
-      • In <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}' | absolute_url }}">
+      • In <a class='category-link' href="{{ '/categories' | relative_url }}#{{ page.category }}' | relative_url }}">
           {{ page.category }}
       </a>
       • Tags:
-      {% for tag in post.tags %}
-          <a class='tag-link' href="{{ '/tags' | absolute_url }}#{{ tag }}">
+      {% for tag in page.tags %}
+          <a class='tag-link' href="{{ '/tags' | relative_url }}#{{ tag }}">
             {{ tag }}
           </a>
       {% endfor %}
