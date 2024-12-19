@@ -31,7 +31,6 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        {{ post.content | number_of_words | divided_by: 180 }} min read
         • Category:
         <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}">
           {{ post.category }}
@@ -44,6 +43,7 @@ layout: base
             </a>
           {% endfor %}
         {% endif %}
+        • {{ page.content | number_of_words | divided_by: 180 }} min read
         <br>
         {%- if site.show_excerpts -%}
           {{ post.excerpt | strip_html | truncatewords: 50 }}
