@@ -24,15 +24,17 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}
-      • In <a class='category-link' href="{{ '/categories' | relative_url }}#{{ page.category }}' | relative_url }}">
-          {{ page.category }}
+      • In <a class='category-link' href="{{ '/categories' | relative_url }}#{{ page.category }}">
+        {{ page.category }}
       </a>
-      • Tags:
-      {% for tag in page.tags %}
+      {% if page.tags.size > 0 %}
+        • Tags:
+        {% for tag in page.tags %}
           <a class='tag-link' href="{{ '/tags' | relative_url }}#{{ tag }}">
             {{ tag }}
           </a>
-      {% endfor %}
+        {% endfor %}
+      {% endif %}
     </p>
   </header>
 
@@ -44,5 +46,8 @@ layout: base
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <a class="u-url" href="{{ page.url | relative_url }}">
+    {{ page.url | relative_url }}
+    {{ page.url | absolute_url }}
+  </a>
 </article>
