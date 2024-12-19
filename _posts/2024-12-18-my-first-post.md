@@ -18,6 +18,4 @@ I love Discourse and am a huge fan, so I'm building customizations like Theme Co
 <br><br>
 I am a Python full-stack web developer. I know Python, HTML, CSS and JS. I'm currently learning SQL, to help manage databases more effectively.
 <br><br>
-I hope to upkeep this blog to continue posting blog posts. I hope I can be like Jeff Atwood one day, with his incredibly popular blog, [codinghorror](https://blog.codinghorror.com/).minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+I hope to upkeep this blog to continue posting blog posts. I hope I can be like Jeff Atwood one day, with his incredibly popular blog, [codinghorror](https://blog.codinghorror.com/).
