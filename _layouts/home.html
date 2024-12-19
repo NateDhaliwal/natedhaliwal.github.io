@@ -31,7 +31,7 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        {{ post.content | reading_time }} min read
+        {{ post.content | number_of_words | divided_by: 180 }} min read
         Category:
         <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}">
           {{ post.category }}
