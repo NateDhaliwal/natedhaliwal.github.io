@@ -32,12 +32,12 @@ layout: base
           </a>
         </h3>
         {{ post.content | number_of_words | divided_by: 180 }} min read
-        Category:
+        • Category:
         <a class='category-link' href="{{ '/categories' | absolute_url }}#{{ post.category }}">
           {{ post.category }}
         </a>
         {% if post.tags.size > 0 %}
-          Tags:
+          • Tags:
           {% for tag in post.tags %}
             <a class='tag-link' href="{{ '/tags' | absolute_url }}#{{ tag }}">
               {{ tag }}
