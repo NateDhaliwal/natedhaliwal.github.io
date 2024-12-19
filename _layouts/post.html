@@ -24,7 +24,7 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}
-      • {{ post.content | number_of_words | divided_by: 180 }} min read
+      • {{ page.content | number_of_words | divided_by: 180 }} min read
       • In <a class='category-link' href="{{ '/categories' | relative_url }}#{{ page.category }}">
         {{ page.category }}
       </a>
