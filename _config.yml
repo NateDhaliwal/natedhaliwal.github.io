@@ -31,7 +31,6 @@ header_pages:
   - about.md
   - tags.md
   - categories.md
-  - https://meta.discourse.org/u/natedhaliwal
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
