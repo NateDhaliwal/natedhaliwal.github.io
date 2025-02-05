@@ -7,8 +7,6 @@ tags: [rant, replit]
 readtime: true
 ---
 
-# How Replit Killed Their Community
-
 <sub>Disclaimer: All text here is strictly an opinion of NateDhaliwal. It does not represent the entire Replit community.</sub>
 <br><br>
 As briefly mentioned in my [first blog post](/NateDhaliwal-s-Blog/2024/12/13/My-First-Post.html), [Replit](https://replit.com) is an online IDE that uses cloud environments. They have a great IDE, and they destroyed their free plan.
