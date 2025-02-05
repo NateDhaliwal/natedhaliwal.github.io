@@ -6,8 +6,6 @@ category: general
 readtime: true
 ---
 
-<h1>Hi there, I'm NateDhaliwal!</h1>
-
 I'm NateDhaliwal. I'm starting this blog today! Allow me to introduce myself.
 <br><br>
 I am an avid Replit user. [Replit](https://replit.com) is an amazing IDE that's on the cloud. I use it a lot for my projects and development. It has some great guides, and supports a <big>HUGE</big> number of programming languages too. <br>
