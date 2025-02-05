@@ -47,7 +47,7 @@ layout: base
         • {{ post.content | number_of_words | divided_by: 180 }} min read
         <br>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt | strip_html | truncatewords: 100 }}
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
         {%- endif -%}
       </li>
       {%- endfor -%}
