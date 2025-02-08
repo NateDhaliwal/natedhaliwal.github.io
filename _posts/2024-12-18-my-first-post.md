@@ -4,7 +4,6 @@ layout: post
 author: NateDhaliwal
 category: general
 readtime: true
-published: false
 ---
 
 I'm NateDhaliwal. I'm starting this blog today! Allow me to introduce myself.
