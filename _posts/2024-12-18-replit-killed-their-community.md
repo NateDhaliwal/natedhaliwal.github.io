@@ -5,7 +5,21 @@ author: NateDhaliwal
 category: replit
 tags: [rant, replit]
 readtime: true
+published: false
 ---
+
+<!--
+Unpublished to not get sued by Replit.
+-->
+
+<!--
+From the first post:
+
+However, they killed their community, and as a ex-Junior Moderator on their support forum, which they removed, I feel saddened that users go to Stack Overflow as directed by Replit, but their topics are closed as they're not coding-related, but rather support-related questions.
+-->
+
+
+
 
 <sub>Disclaimer: All text here is strictly an opinion of NateDhaliwal. It does not represent the entire Replit community.</sub>
 <br><br>
