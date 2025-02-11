@@ -8,44 +8,18 @@
 layout: home
 ---
 
-<nav>
-  <button><a href='/experience'>Experience</a></button>
-</nav>
+# Who am I?
 
-<h1>Who am I?</h1>
-<p>I am @NateDhaliwal on Replit and Replit Ask, as well as @natme6677 on Scratch.</p>
-<p>I code with Python, HTML, CSS, MIT App Inventor!</p>
-<p>I'm starting on JavaScript and C++!</p>
-<p>I'm also working on a Flask forum for <a href='https://code.amsilla.com'>Amsilla Code</a>!</p>
+I am @NateDhaliwal on Replit and Replit Ask (when it was still around), as well as @natme6677 on Scratch.
+<br><br>
+I code with Python, HTML, CSS and JS!
 
-<h1>My projects</h1>
-<ul>
-  <li>
-    <a href="/projects/jackpot">Jackpot! - My best game</a>
-  </li>
-  <br>
-  <li>
-    <a href="/projects/email-sender-for-gmail-sender">Email sender for Gmail - My most complex program</a>
-  </li>
-  <br>
-  <li>
-    <a href="/projects/send-email-from-form-template">Email sender with HTML form (Template) - My best template</a>
-  </li>
-  <br>
-  <li>
-    <a href="https://pypi.org/project/natedhaliwal/">natedhaliwal - My Python PyPi package</a>
-  </li>
-</ul>
+# My projects
+1. [natedhaliwal - My Python PyPi package](https://pypi.org/project/natedhaliwal/)
 
-<h1>Some facts about me!</h1>
-<ol>
-  <li>
-  I only started Python and HTML in 2023, but I'm a fast learner and I completed Replit's <a href="https://replit.com/learn/100-days-of-python/hub?utm_source:widget">100 Days Of Code</a> course!
-  </li>
-  <br>
-  <!--
-  <li>
-  I am an active member of <a href="https://ask.replit.com/invites/XRja3Hgrd5">Replit Ask</a>, and I'm currently a Jr. Mod (Trust Level 4) on that forum!
-  </li>
-  -->
-</ol>
+# Some facts about me!
+  - I only started Python and HTML in 2023, but I'm a fast learner and I completed Replit's [100 Days Of Code](https://replit.com/learn/100-days-of-python/hub?utm_source:widget) course!
+  
+  - I was an active member of Replit Ask (Replit's support forum), and I was a Jr. Mod (Trust Level 4) on that forum, before it got shut down.
+
+  - I am a huge [Discourse](https://discourse.org) fan. I stumbled upon the Replit Ask, which was powered by Discourse, which then led me to be active on [Discourse Meta](https://meta.discourse.org) after Replit Ask shut down.
