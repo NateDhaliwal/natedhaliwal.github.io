@@ -1,3 +1,4 @@
+<!--
 <script>
   window.store = {
       {{ range where .Site.Pages "Section" "blog" }}
@@ -11,13 +12,104 @@
       {{ end }}
   }
 </script>
+-->
 
+<!--
 <div class="header-search">
     <input type="search" id="search-box" name="query">
     <ul id="search-results"></ul>
 </div>
-
+-->
 <!-- Import lunr.js from unpkg.com -->
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<!--<script src="https://unpkg.com/lunr/lunr.js"></script>-->
 <!-- Custom search script which we will create below -->
-<script src="{{ '/assets/js/search-script.js' | relative_url }}"></script>
+<!--<script src="{{ '/assets/js/search-script.js' | relative_url }}"></script>-->
+
+<style>
+.search-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+
+#search-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+}
+
+.search-results div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results div:hover {
+  background: #f0f0f0;
+}
+</style>
+
+<div class="site-header">
+  <div class="search-container">
+    <input type="text" id="search-box" placeholder="Search..." aria-label="Search">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<script>
+  const posts = [
+    {% for post in site.posts %}
+      { "title": "{{ post.title }}", "url": "{{ post.url }}", "content": "{{ post.content | strip_html | strip_newlines | escape }}" },
+    {% endfor %}
+  ];
+
+  const searchBox = document.getElementById('search-box');
+  const searchResults = document.getElementById('search-results');
+
+  searchBox.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    searchResults.innerHTML = '';
+    
+    if (query) {
+      const filteredPosts = posts.filter(post => 
+        post.title.toLowerCase().includes(query) || 
+        post.content.toLowerCase().includes(query)
+      );
+      
+      if (filteredPosts.length > 0) {
+        searchResults.style.display = 'block';
+        filteredPosts.forEach(post => {
+          const resultItem = document.createElement('div');
+          resultItem.textContent = post.title;
+          resultItem.onclick = () => {
+            window.location.href = post.url;
+          };
+          searchResults.appendChild(resultItem);
+        });
+      } else {
+        searchResults.style.display = 'none';
+      }
+    } else {
+      searchResults.style.display = 'none';
+    }
+  });
+
+  // Hide results when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!searchContainer.contains(event.target)) {
+      searchResults.style.display = 'none';
+    }
+  });
+</script>
