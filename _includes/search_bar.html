@@ -17,3 +17,10 @@
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <!-- Custom search script which we will create below -->
 <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+
+<div class="header-search">
+  <form class="header-search-form" action="/search/" method="get">
+    <input type="text" id="search-box" name="query">
+    <input type="submit" value="search">
+  </form>
+</div>
