@@ -50,14 +50,14 @@
   };
 
   // Object to handle case-insensitive matches
-  e = new function() {
+  var e = new function() {
     this.matches = function(t, e) {
       return n(e.toLowerCase(), t.toLowerCase()); // Compare lowercased strings
     }
   };
 
   // Object to handle word-based matches
-  r = new function() {
+  var r = new function() {
     this.matches = function(e, t) {
       return !!e && (e = e.trim().toLowerCase(), (t = t.trim().toLowerCase()).split(" ").filter(function(t) {
         return 0 <= e.indexOf(t); // Check if all words in the search term are in the text
@@ -66,7 +66,7 @@
   };
 
   // Main search object
-  d = {
+  var d = {
     // Adds a new item to the search index
     put: function(t) {
       if (l(t)) return a(t); // If it's a valid object, add it to the index
@@ -188,7 +188,7 @@
   };
 
   // Utility functions for merging and checking JSON
-  w = {
+  var w = {
     merge: function(t, e) {
       const n = {};
       for (const r in t) n[r] = t[r], "undefined" != typeof e[r] && (n[r] = e[r]); // Merge options
