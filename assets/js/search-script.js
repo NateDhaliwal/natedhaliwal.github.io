@@ -1,6 +1,4 @@
-const searchBox = document.getElementById('search-box');
-searchBox.onchange = (function() {
-  alert('hi');
+(function() {
   function showResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
