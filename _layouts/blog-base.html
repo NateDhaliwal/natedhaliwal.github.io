@@ -3,6 +3,26 @@
 
   {%- include head.html -%}
 
+  <style>
+    div.blog-contents {
+      display: flex;
+      flex-direction: row;
+    }
+    aside.blog-sidebar {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      width: 29%;
+      margin-left: 1%;
+    }
+    main.page-content {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+  </style>
+  
   <body>
     
     {%- include blog-header.html -%}
@@ -11,12 +31,18 @@
     </script>
     <div class="gcse-search"></div>
     -->
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
+    <div class="blog-contents">
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+      <aside class="blog-sidebar">
+        <div class="wrapper">
+          {% include search_bar.html %} 
+        </div>
+      </aside>
+    </div>
     {%- include footer.html -%}
 
   </body>
