@@ -27,6 +27,7 @@
 
 <style>
 .search-container {
+  background-color: $background-color;
   display: inline-block;
   position: relative;
   margin-left: 20px; /* Adjust spacing as needed */
@@ -61,11 +62,9 @@
 }
 </style>
 
-<div class="site-header">
-  <div class="search-container">
-    <input type="text" id="search-box" placeholder="Search..." aria-label="Search">
-    <div id="search-results" class="search-results"></div>
-  </div>
+<div class="search-container">
+  <input type="text" id="search-box" placeholder="Search..." aria-label="Search">
+  <div id="search-results" class="search-results"></div>
 </div>
 
 <script>
@@ -99,7 +98,12 @@
           searchResults.appendChild(resultItem);
         });
       } else {
-        searchResults.style.display = 'none';
+        // Show "No results found" message
+        searchResults.style.display = 'block';
+        const noResultsItem = document.createElement('div');
+        noResultsItem.textContent = 'No results found';
+        noResultsItem.style.color = 'gray'; // Optional: style the message
+        searchResults.appendChild(noResultsItem);
       }
     } else {
       searchResults.style.display = 'none';
