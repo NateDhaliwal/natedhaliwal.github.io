@@ -265,7 +265,8 @@
     function a(t) {
       throw new Error("SimpleJekyllSearch --- " + t); // Throw an error with a message
     }
-
+    console.log("Search Index:", d); // Log the search index
+    console.log("Search Term:", t); // Log the search term
     // Main function to set up the search
     t.SimpleJekyllSearch = function(t) {
       var n;
