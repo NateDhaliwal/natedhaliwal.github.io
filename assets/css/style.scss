@@ -7,12 +7,9 @@
   "minima/initialize";
 
 ul#results-container {
-  padding: 0;
+  margin-left: $spacing-unit;
   list-style-type: none;
-}
-
-#results-container li {
-  margin-bottom: 1.5rem;
+  background-color: $background-color;
 }
 
 span.post-meta {
