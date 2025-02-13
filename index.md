@@ -23,3 +23,12 @@ I code with Python, HTML, CSS and JS!
   - I was an active member of Replit Ask (Replit's support forum), and I was a Jr. Mod (Trust Level 4) on that forum, before it got shut down.
 
   - I am a huge [Discourse](https://discourse.org) fan. I stumbled upon the Replit Ask, which was powered by Discourse, which then led me to be active on [Discourse Meta](https://meta.discourse.org) after Replit Ask shut down.
+
+---
+
+## Recent Posts
+{% for post in site.posts limit:3 %}
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
+  <div>{{ post.content |truncatehtml | truncatewords: 50 }}</div>
+{% endfor %}
