@@ -43,3 +43,16 @@ You can find the full list of hosting providers [here](https://meta.discourse.or
 ---
 
 ## Domain providers
+A domain provider is where you get your domain from (duh!). You'll need this to get a URL for your forum.
+
+1. [NameCheap](https://namecheap.com)
+
+NameCheap is a reliable domain provider that I use for my forum. It's cheap (it's in the name!), and you can get some domains as low as $0.98 for the first year. Great stuff, and I have no problems with using it. It has a fairly clean interface and is reccommended by most people.
+
+2. [Porkbun](https://porkbun.com)
+
+Another option is Porkbun, which provides relatively inexpensive domains. I've never used them before, but I've heard it's not too bad.
+
+3. [Cloudflare](https://cloudflare.com)
+
+Besides web security, Cloudflare *does* have a domain product. It gives you domain protection out of the box, but I'm not sure if it can work with Discourse.
