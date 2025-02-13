@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
+  {% capture url_path %}{{page.url}}{% endcapture %}
+  {% if url_path == '/' %}
+    {%- include home-head.html -%}
+  {% else %}
+    {%- include head.html -%}
+  {% endif %}
   <body>
 
     {%- include header.html -%}
