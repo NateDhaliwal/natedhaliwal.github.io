@@ -59,3 +59,4 @@ I code with Python, HTML, CSS and JS!
       </li>
       {%- endfor -%}
     </ul>
+{%- endif -%}
