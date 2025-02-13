@@ -5,7 +5,6 @@ author: NateDhaliwal
 category: discourse
 tags: [discourse, tips & tricks, guide]
 readtime: true
-published: false
 ---
 
 As I mentioned in [my first blog post]({{ '/blog/general/2024/12/18/my-first-post/' | relative_url }}), [Discourse](https://discourse.org) is an amazing, modern, and feature-rich forum software. A selling point? It's really easy to install and setup, and support is top-notch.
@@ -55,4 +54,31 @@ Another option is Porkbun, which provides relatively inexpensive domains. I've n
 
 3. [Cloudflare](https://cloudflare.com)
 
-Besides web security, Cloudflare *does* have a domain product. It gives you domain protection out of the box, but I'm not sure if it can work with Discourse.
+Besides web security, Cloudflare *does* have a domain product. It gives you domain protection out of the box, and ***should*** work with Discourse. I'm not 100% sure, so confirm this before using Cloudflare for your domains.
+
+### Conclusion
+I would suggest using NameCheap as your domain provider. There are others, of course, that are not listed, like GoDaddy, but it has become quite expensive so I didn't list it here. Of course, you should look up different domain providers and search which one has the best deals fitting to the domain you want to get.
+
+---
+
+## Transactional email providers
+No, I'm not talking about Gmail or Outlook. I am referring to sending of automated emails from a website. Heard of MailGun, MailChimp, Brevo (previously Sendinblue)? These are what we're going to look at.
+
+1. [Brevo, previously Sendinblue](https://brevo.com)
+
+Brevo is my favourite of all (because I've only used it and nothing else). It's free plan is generous, allowing 300 emails a day. I use this for my forum, and had no trouble setting it up. Really clean interface, with no confusing directions. It was a breeze to set up, and I really recommend it.
+
+2. [MailGun](https://mailgun.com) and [MailJet](https://mailjet.com)
+
+I see MailGun used more than MailJet, but both are listed under the recommended list of email providers for Discourse. Their free plans are less generous, though, so I'm not too keen on choosing them. MailGun: 100 emails a day. MailJet: 200 emails a day.
+
+### Conclusion
+There aren't a lot of providers out there, but I would put Brevo up there for free ones. Check out [SendGrid](https://sendgrid.com) or AWS's [SES (Simple Email Service)](https://aws.amazon.com/ses). It (SES) comes pretty cheap: $0.10 for 1000 emails. Seems quite reasonable, actually. To look at the full list of recommended providers, see [this guide](https://github.com/discourse/discourse/blob/main/docs/INSTALL-email.md).
+
+---
+
+## Summary
+Setting up Discourse has a lot of moving parts. It's a big task to upkeep all of them. You can follow my slightly-biased opinions above, but I've tried a few and given my honest feedback. When setting up your own forum, the choice is yours. It's always good to look at your options instead of following all my recommendations. <br>
+For the official install guide on how to set up your own forum, see [this guide](https://github.com/discourse/discourse/blob/main/docs/INSTALL-cloud.md).
+<br><br>
+Good luck!
