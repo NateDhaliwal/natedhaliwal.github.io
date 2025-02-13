@@ -25,4 +25,9 @@ A workaround is to use `tmux` to run the rebuild command in the background, so y
 
 2. [Digital Ocean](https://digitalocean.com)
 
-This is Discourse's reccommended way of hosting Discourse. A bit on the pricey side (in my opinion) when you take a look at the other VPS providers I list below. The upside is that it is beginner-friendly and most people use this, so assistance is not hard to find. They have a $300 credit on signup that you can use to offset costs of your server for a while.
+This is Discourse's reccommended way of hosting Discourse. A bit on the pricey side (in my opinion) when you take a look at the other VPS providers I list below. The upside is that it is beginner-friendly and most people use this, so assistance is not hard to find. They have a $300 credit on signup that you can use to offset costs of your server for a while. <br>
+I think DO is a great way to get started with managing your own forum. If GCP intimidates you, try DO.
+
+3. [Hetzner](https://hetzner.com/cloud)
+
+Hetzner seems line a good option for your VPS. Their price starts from ~5 bucks (like DigitalOcean), but you have better resources than DO at that price. I have not run Discourse on Hetzner before, but people have done so with little to no problems. Just a note that they currently only have locations in Germany and Finland (and Singapore, but that doesn't seem like an option on the pricing page). 
