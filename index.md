@@ -27,10 +27,10 @@ I code with Python, HTML, CSS and JS!
 ---
 
 ## Recent Posts
-{%- if posts.size > 0 -%}
+{%- if site.posts.size > 0 -%}
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts limit:3 -%}
+      {%- for post in site.posts limit:3 -%}
       <li>
         <span class="post-meta">Posted on {{ post.date | date: date_format }}</span>
         <h3>
