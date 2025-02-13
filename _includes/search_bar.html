@@ -41,7 +41,8 @@
   max-width: 300px; /* Set a max width for larger screens */
 }
 
-.search-results {
+div.search-results {
+  cursor: pointer;
   position: relative;
   top: 100%;
   left: 0;
@@ -51,11 +52,8 @@
   border-radius: 4px;
   z-index: 1000;
   display: none; /* Hidden by default */
-}
-
-.search-results div {
-  padding: 8px;
-  cursor: pointer;
+  width: 100%; /* Make the search box take full width */
+  max-width: 300px; /* Set a max width for larger screens */
 }
 
 .search-results div:hover {
