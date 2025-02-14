@@ -38,5 +38,7 @@ Follow these steps to get `tmux`:
 That's it! Now you know who to simultaneously run commands (have multiple sessions at the same time), and to run commands in the background. Good luck! <br>
 For more information on `tmux`, see [this Red Hat guide](https://www.redhat.com/en/blog/introduction-tmux-linux)
 
+<hr>
+
 [^1]: Or, more realistically, until you delete your server.
 
