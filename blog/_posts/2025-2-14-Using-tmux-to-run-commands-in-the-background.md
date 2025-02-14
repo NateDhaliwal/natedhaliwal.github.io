@@ -7,7 +7,7 @@ tags: [tips & tricks, guide, bash]
 readtime: true
 ---
 
-## What is tmux?
+## What is `tmux`?
 `tmux` is an "open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window. It is useful for running more than one command-line program at the same time. It can also be used to detach processes from their controlling terminals, allowing remote sessions to remain active without being visible." (Source: [Wikipedia](https://en.wikipedia.org/wiki/Tmux)). Succintly put, in my opinion. Basically, you can run commands simultaneously, or in the background. <br>
 For this guide, I'll talk about rebuilding your Discourse forum in the background. Of course, this can apply to *anything*, not just Discourse, so I'll be a bit more general and not so Discourse-specific.
 
@@ -26,7 +26,7 @@ Follow these steps to get `tmux`:
 4. Now, you can run the command. It could be some command that does extensive tests on your program, that could take a few hours, or a forum rebuild (in Discourse's case). Simply run your command (`./launcher rebuild app` for Discourse) in the session!
 
 ## Detaching the session
-1. Now, you'll need to detach the session so that it can run in the background. Press <kbd>CTRL</kbd>+<kbd>B</kbd>. If you don't see anything, don't worry. Now, press <kbd>D</kbd> on your keyboard. You should now see the terminal with you in root BEFORE entering the session.
+1. Now, you'll need to detach the session so that it can run in the background. Press `CTRL`+`B`. If you don't see anything, don't worry. Now, press `D` on your keyboard. You should now see the terminal with you in root BEFORE entering the session.
 2. Now that the session is detached and running, you can exit root with `exit` and logout with `logout`. Don't worry, the command you entered earlier is still running.
 
 ## Attaching the session
