@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blog-base
 title: All tags
 ---
 
