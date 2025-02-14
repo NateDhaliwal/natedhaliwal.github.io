@@ -7,8 +7,9 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  My personal blog where I talk about random topics that pop into my head.
+  My portfolio and my honest, personal blog.
 
+pagination: true
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
@@ -31,7 +32,6 @@ permalink: pretty
 # in order as they should show up.
 header_pages:
   - about.md
-  - blog/index.md
   - experience.md
 
 # Set to `true` to show excerpts on the homepage.
