@@ -9,7 +9,7 @@ author:
 description: >
   My portfolio and my honest, personal blog.
 
-pagination: true
+#pagination: true
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
@@ -34,9 +34,12 @@ header_pages:
   - about.md
   - experience.md
 
+include:
+  - blog
+
 blog_header_pages:
-  - tags.md
-  - categories.md
+  - blog/tags.md
+  - blog/categories.md
   
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
