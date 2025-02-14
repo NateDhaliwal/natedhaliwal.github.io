@@ -34,6 +34,10 @@ header_pages:
   - about.md
   - experience.md
 
+blog_header_pages:
+  - tags.md
+  - categories.md
+  
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
 
