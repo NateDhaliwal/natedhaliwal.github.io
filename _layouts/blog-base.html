@@ -22,6 +22,24 @@
       flex-direction: column;
       width: 70%;
     }
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      div.blog-contents {
+        display: flex;
+        flex-direction: column;
+      }
+      aside.blog-sidebar {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      main.page-content {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+      }
+    }
   </style>
   
   <body>
