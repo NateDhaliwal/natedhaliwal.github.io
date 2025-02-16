@@ -1,15 +1,16 @@
 <style>
   ul.pager {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   li.pg {
     list-style: none;
   }
   li.previous {
-    float: left;
+    order: 1;
   }
   li.next {
-    float: right;
+    order: 2;
   }
   li.disable, a.disable {
     display: none;
