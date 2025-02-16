@@ -7,7 +7,15 @@
     {%- include head.html -%}
   {%- endif -%}
   <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-571T5LZL4F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-571T5LZL4F');
+</script>
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
