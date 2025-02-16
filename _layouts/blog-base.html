@@ -22,10 +22,6 @@
       flex-direction: column;
       width: 70%;
     }
-    div.pagination-buttons {
-      order: 3;
-      width: 100%;
-    }
     @media only screen and (max-width: 768px) {
       /* For mobile phones: */
       div.blog-contents {
@@ -75,9 +71,9 @@
           {% include search_bar.html %} 
         </div>
       </aside>
-      <div class="pagination-buttons">
+    </div>
+    <div class="pagination-buttons">
         {% include pagination.html %}
-      </div>
     </div>
     {%- include footer.html -%}
 
