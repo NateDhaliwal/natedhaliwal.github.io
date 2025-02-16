@@ -1,4 +1,7 @@
 <style>
+  li.pg {
+    list-style: none;
+  }
   li.previous {
     float: left;
   }
@@ -9,6 +12,8 @@
     display: none;
   }
   a.btn {
+    color: #ccc;
+    padding: 8px;
     cursor: pointer;
     background: transparent;
     border: 1px solid #ccc;
@@ -18,13 +23,13 @@
 
 <ul class="pager">
   {% if page.previous.url %}
-    <li class="previous"><a class="btn" href="{{page.previous.url}}">Previous</a></li>
+    <li class="pg previous"><a class="btn" href="{{page.previous.url}}">Previous</a></li>
   {% else %}
-    <li class="previous disable"><a class="btn disabled" href="{{page.previous.url}}">Previous</a></li>
+    <li class="pg previous disable"><a class="btn disabled" href="{{page.previous.url}}">Previous</a></li>
   {% endif %}
   {% if page.next.url %}
-    <li class="next"><a class="btn" href="{{page.next.url}}">Next</a></li>
+    <li class="pg next"><a class="btn" href="{{page.next.url}}">Next</a></li>
   {% else %}
-    <li class="next disable"><a class="btn disabled" href="{{page.next.url}}">Next</a></li>
+    <li class="pg next disable"><a class="btn disabled" href="{{page.next.url}}">Next</a></li>
   {% endif %}
 </ul>
