@@ -1,12 +1,30 @@
+<style>
+  li.previous {
+    float: left;
+  }
+  li.next {
+    float: right;
+  }
+  li.disable, a.disable {
+    display: none;
+  }
+  a.btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+</style>
+
 <ul class="pager">
   {% if page.previous.url %}
-    <li><a class="btn btn-outline-primary" href="{{page.previous.url}}">Previous</a></li>
+    <li class="previous"><a class="btn" href="{{page.previous.url}}">Previous</a></li>
   {% else %}
-    <li class="disable"><a class="btn btn-outline-primary disabled" href="{{page.previous.url}}">Previous</a></li>
+    <li class="previous disable"><a class="btn disabled" href="{{page.previous.url}}">Previous</a></li>
   {% endif %}
   {% if page.next.url %}
-    <li class="next"><a class="btn btn-outline-primary" href="{{page.next.url}}">Next</a></li>
+    <li class="next"><a class="btn" href="{{page.next.url}}">Next</a></li>
   {% else %}
-    <li class="next disable"><a class="btn btn-outline-primary disabled" href="{{page.next.url}}">Next</a></li>
+    <li class="next disable"><a class="btn disabled" href="{{page.next.url}}">Next</a></li>
   {% endif %}
 </ul>
