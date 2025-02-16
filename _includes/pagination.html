@@ -1,24 +1,36 @@
 <style>
+  footer {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+
   ul.pager {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    flex-direction: row; /* Optional for clarity */
+    justify-content: space-between; /* Space out the buttons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
   }
+
   li.pg {
     list-style: none;
-    margin: 0;
+    margin: 0; /* Remove default margin from list items */
   }
+
   li.previous {
     order: 1;
   }
+
   li.next {
     order: 2;
+    flex-grow: 1; /* Allow the next button to grow */
+    text-align: right; /* Align text to the right */
   }
+
   li.disable, a.disable {
     display: none;
   }
+
   a.btn {
     text-decoration: none;
     color: black;
@@ -28,9 +40,14 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  /* Additional style for when only the next button is present */
+  .single-next {
+    justify-content: flex-end; /* Align the next button to the right */
+  }
 </style>
 
-<ul class="pager">
+<ul class="pager {% if page.previous.url == null %}single-next{% endif %}">
   {% if page.previous.url %}
     <li class="pg previous"><a class="btn" href="{{page.previous.url}}">Previous</a></li>
   {% else %}
