@@ -31,7 +31,7 @@ Follow these steps to get `tmux`:
 
 ## Attaching the session
 1. At any point in time when you want to check the progress of your command, SSH into your container, get into root, and run `tmux attach -t 0` to attach session 0. You should now see the session opened up, displaying whatever is being logged to the terminal. Yay 🎉! You did it! Now just detatch the session again and be on your way.
-2. The session will be deleted once your command finishes. No need to stress about it staying there forever to the end of time [^1].
+2. The session will not be deleted once your command finishes. You'll have to attach your session and run `exit` in the session to delete it. Otherwise, it would say there forever to the end of time [^1].
 
 ---
 
