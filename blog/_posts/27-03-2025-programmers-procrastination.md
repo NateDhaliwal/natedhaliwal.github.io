@@ -2,7 +2,7 @@
 title: "The procrastination of programmers"
 layout: post
 author: NateDhaliwal
-category: coding
+category: general
 tags: [general, relatable]
 readtime: true
 published: true
