@@ -2,8 +2,8 @@
 title: "HTML isn't a programming language... or is it?"
 layout: post
 author: NateDhaliwal
-category: general
-tags: [general, discussion]
+category: discussion
+tags: [general, discussion, controversial]
 readtime: true
 ---
 
