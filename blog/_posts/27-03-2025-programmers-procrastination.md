@@ -7,7 +7,7 @@ tags: [general, relatable]
 readtime: true
 ---
 
-<small>This was originally posted on https://dev.to/natedhaliwal/procrastination-2eop.</small>
+<small>This was originally posted on [this Dev.to post](https://dev.to/natedhaliwal/procrastination-2eop).</small>
 
 ## Procrastination
 Procrastination. We've all been there, I'm sure. It is a common thing, whether our project is big or small, we are always putting something off.
