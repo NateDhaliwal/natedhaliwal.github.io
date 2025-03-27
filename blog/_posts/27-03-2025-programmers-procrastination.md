@@ -5,6 +5,7 @@ author: NateDhaliwal
 category: coding
 tags: [general, relatable]
 readtime: true
+published: true
 ---
 
 <small>This was originally posted on [this Dev.to post](https://dev.to/natedhaliwal/procrastination-2eop).</small>
