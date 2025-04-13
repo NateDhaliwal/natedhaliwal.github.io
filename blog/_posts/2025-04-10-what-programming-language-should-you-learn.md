@@ -3,7 +3,7 @@ title: "What programming language should you learn?"
 layout: post
 author: NateDhaliwal
 category: general
-tags: [general]
+tags: [general, advice, coding & programming]
 readtime: true
 ---
 
