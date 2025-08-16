@@ -60,6 +60,56 @@ class Comment(db.Model):
 ```
 I may add a `reply_to` feature in the future, where it corresponds to another comment's `comment_id`. My main issue with this is that I'm unsure how this will be displayed, like with nested replies?
 
-###
+### Routes
+The `app.py` file is not overly complicated - I simply grab all the comments, reverse the list (so they're arranged by most recent) and send them. For posting, I just create a new comment based on the JSON passed and commit that. The `post_slug` argument here is the slug of the blog's post.
+```python
+from flask import Flask, render_template, request, url_for, redirect, jsonify, session
+from models import db, migrate, Comment
+import os
+import json
+from dotenv import load_dotenv
+from flask_cors import CORS
+
+load_dotenv()
+
+app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_URL']
+
+db.init_app(app)
+migrate.init_app(app, db)
+CORS(app, origins=["**********************"])
+
+@app.route('/<post_slug>', methods=['POST'])
+def show_comments(post_slug):
+  if request.is_json:
+    name = request.get_json()['comments_poster']
+    content = request.get_json()['comments_content']
+    id = len(Comment.query.all()) + 1
+    newComment = Comment(
+      comment_id=id,
+      comment_poster=name,
+      comment_content=content,
+      belongs_to=post_slug
+    )
+    db.session.add(newComment)
+    db.session.commit()
+    return jsonify({'message': 'Comment added successfully'}), 201
+  return jsonify({'error': 'Invalid request'}), 400
+
+@app.route('/<post_slug>/comments', methods=['GET'])
+def fetch_comments(post_slug):
+  comments = list(reversed(Comment.query.filter_by(belongs_to=post_slug).all()))
+  return jsonify([
+    {
+      'comment_poster': c.comment_poster,
+      'comment_content': c.comment_content,
+      'date_posted': c.date_posted.strftime('%Y-%m-%d %H:%M') if c.date_posted else ''
+    }
+    for c in comments
+  ])
+```
+
+### Others
+That's actually pretty much the main logic of the file. The mmnnnnnnnnnmmmmmmmmmmmmmm
 
 [^1]: Courtesy of ChatGPT – so much for trying not to use AI… well, at least I don’t do vibe coding, but that’s a story for another day
