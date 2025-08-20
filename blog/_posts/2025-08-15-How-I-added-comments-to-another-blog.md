@@ -25,13 +25,13 @@ My blog did not match a lot of tools and software that gave comments. The differ
 I really don’t like to use 3rd-party software that tracks users’ data, like location, IP address, and other PII that most people wouldn’t want flying about. I made it a point not to use the very popular Disqus, as I’m also big on open-source.
 
 ### Difficult to set up
-My blog is running on Vercel. Some comment systems like Schnack or Remark42 needed VPSs themselves, some even running in Docker containers – something Vercel doesn’t really provide. And I didn’t want to spend any money on this. And another thing – some have used [Staticman](https://staticman.net/) and had some success with it, but to me, it felt too complicated.
+My blog is running on [Vercel](https://vercel.com/). Some comment systems like Schnack or Remark42 needed VPSs themselves, some even running in Docker containers – something [Vercel](https://vercel.com/) doesn’t really provide. And I didn’t want to spend any money on this. And another thing – some have used [Staticman](https://staticman.net/) and had some success with it, but to me, it felt too complicated.
 
 ### So?
-So, well, yes -  creating a comments system with something already out there proved to be harder than I thought. I saw Rachel Smith’s [blog post](https://rachsmith.com/static-blog-comments/) (the mouse trail is pretty cool) on how she added comments to her own Astro blog, but she used Netlify forms, something I didn’t have because I was using Vercel (though I could have used Netlify, but I was lazy). Therefore, I gritted my teeth and got to work.
+So, well, yes -  creating a comments system with something already out there proved to be harder than I thought. I saw Rachel Smith’s [blog post](https://rachsmith.com/static-blog-comments/) (the mouse trail is pretty cool) on how she added comments to her own Astro blog, but she used Netlify forms, something I didn’t have because I was using [Vercel](https://vercel.com/) (though I could have used Netlify, but I was lazy). Therefore, I gritted my teeth and got to work.
 
 ## The self-made comments system
-I used a relatively simple Python app. Originally in full HTML and embedded via an Iframe, I wished to add authentication. To cut a (very) long story short, that didn’t work out. In the end, I used a Flask web app behind Gunicorn, deployed on Vercel.
+I used a relatively simple Python app. Originally in full HTML and embedded via an Iframe, I wished to add authentication. To cut a (very) long story short, that didn’t work out. In the end, I used a Flask web app behind Gunicorn, deployed on [Vercel](https://vercel.com/).
 
 The app handled POST requests to add comments, and GET requests every 5 seconds by the host to update the comments list [^1]. This way, all I needed now was some vanilla JS and a form.
 
@@ -85,9 +85,16 @@ def fetch_comments(post_slug):
 ```
 
 ### Authentication?
-Ah yes. Authentication. Unfortunately, running something like Clerk wasn't possible of Vercel. Worse luck, other authentication systems required me to switch my blog to [SSR](
+Ah yes. Authentication. Unfortunately, running something like Clerk wasn't possible of [Vercel](https://vercel.com/). Worse luck, other authentication systems required me to switch my blog to [SSR](https://docs.astro.build/en/guides/on-demand-rendering/), which was quite incompatible with my blog, which uses the `static` mode [^2].
+
+What did I do? A text box, paired with `localStorage` to store your username (and also making the input disabled, unless you sign out). Now when I say 'sign out', I mean nothing more than a link that clears the `localStorage` key. Of course, there are some glaring errors and it wouldn't be difficult for someone who knows HTML and JS to bypass this.
+
+I didn't want to use things like Giscus (even though I do so for this blog), as it needed Github authentication, but my blog wasn't programming related. So that was out of the window.
 
 ## Conclusion
-If you're into non-proprietary commenting systems that cost money or have annoying branding, I encourage you to make one yourself. This took longer than I expected (because of my trials and headaches with 3rd-party commenting systems), but the rsult really isn't too bad. This worked well on my Astro SPA.
+If you're into non-proprietary commenting systems that cost money or have annoying branding, I encourage you to make one yourself. This took longer than I expected (because of my trials and headaches with 3rd-party commenting systems), but the result really isn't too bad. This worked well on my Astro SPA. I might even consider using it for this blog 🤔.
+
+But yeah, that's my experience with a bit of mishaps here and there. Happy coding!
 
 [^1]: Courtesy of ChatGPT – so much for trying not to use AI… well, at least I don’t do vibe coding, but that’s a story for another day.
+[^2]: If you really want to know the repercussions, all pages that display posts were broken, and all links redirected to `/posts/undefined`. It was a real headache fixing that, trust me. So I switched back to using `static`.
