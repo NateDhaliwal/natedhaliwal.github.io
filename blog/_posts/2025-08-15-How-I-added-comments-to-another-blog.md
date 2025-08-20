@@ -32,23 +32,18 @@ So, well, yes -  creating a comments system with something already out there pro
 
 ## The self-made comments system
 I used a relatively simple Python app. Originally in full HTML and embedded via an Iframe, I wished to add authentication. To cut a (very) long story short, that didn’t work out. In the end, I used a Flask web app behind Gunicorn, deployed on Vercel.
+
 The app handled POST requests to add comments, and GET requests every 5 seconds by the host to update the comments list [^1]. This way, all I needed now was some vanilla JS and a form.
-Well, not so simple. I needed a way to store the names of posters, so I used a text box that could not be edited by the user if they had posted before, which I called being ‘signed in’. There is a link to ‘sign out’, so to speak – it clears the username from `localStorage` and the textbox is now editable.
+
+Well, not so simple. I needed a way to store the names of posters, so I used a text box that could not be edited by the user if they had posted before, which I called being 'signed in'. There is a link to 'sign out', so to speak – it clears the username from `localStorage` and the textbox is now editable.
+
 I used Flask-SQLAlchemy to structure the database model, and used a cloud database to store it. Originally using CockroachDB Cloud, I switched to Neon when my free trial was over (which I didn’t even know was possible). This went fairly smoothly, and now the database can be accessed from pretty much anywhere.
 
-For the JS logic that handled the form submission, I obfuscated the whole file. Some “power users” could obviously realise I was using `readonly` on the name input, and I wasn’t taking my chances. The blog isn't programming-related, but you never know.
+For the JS logic that handled the form submission, I obfuscated the whole file. Some "power users" could obviously realise I was using `readonly` on the name input, and I wasn’t taking my chances. The blog isn't programming-related, but you never know.
 
 ### Database model
 My `models.py` file was not advanced, just a barebones structure of a comment:
 ```python
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from datetime import datetime
-import pytz
-
-db = SQLAlchemy()
-migrate = Migrate()
-
 class Comment(db.Model):
   __tablename__ = "comments"
 
@@ -63,34 +58,14 @@ I may add a `reply_to` feature in the future, where it corresponds to another co
 ### Routes
 The `app.py` file is not overly complicated - I simply grab all the comments, reverse the list (so they're arranged by most recent) and send them. For posting, I just create a new comment based on the JSON passed and commit that. The `post_slug` argument here is the slug of the blog's post.
 ```python
-from flask import Flask, render_template, request, url_for, redirect, jsonify, session
-from models import db, migrate, Comment
-import os
-import json
-from dotenv import load_dotenv
-from flask_cors import CORS
-
-load_dotenv()
-
-app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_URL']
-
-db.init_app(app)
-migrate.init_app(app, db)
-CORS(app, origins=["**********************"])
-
 @app.route('/<post_slug>', methods=['POST'])
 def show_comments(post_slug):
   if request.is_json:
     name = request.get_json()['comments_poster']
     content = request.get_json()['comments_content']
     id = len(Comment.query.all()) + 1
-    newComment = Comment(
-      comment_id=id,
-      comment_poster=name,
-      comment_content=content,
-      belongs_to=post_slug
-    )
+    # Create new comment...
+    # [...]
     db.session.add(newComment)
     db.session.commit()
     return jsonify({'message': 'Comment added successfully'}), 201
@@ -109,7 +84,10 @@ def fetch_comments(post_slug):
   ])
 ```
 
-### Others
-That's actually pretty much the main logic of the file. The mmnnnnnnnnnmmmmmmmmmmmmmm
+### Authentication?
+Ah yes. Authentication. Unfortunately, running something like Clerk wasn't possible of Vercel. Worse luck, other authentication systems required me to switch my blog to [SSR](
 
-[^1]: Courtesy of ChatGPT – so much for trying not to use AI… well, at least I don’t do vibe coding, but that’s a story for another day
+## Conclusion
+If you're into non-proprietary commenting systems that cost money or have annoying branding, I encourage you to make one yourself. This took longer than I expected (because of my trials and headaches with 3rd-party commenting systems), but the rsult really isn't too bad. This worked well on my Astro SPA.
+
+[^1]: Courtesy of ChatGPT – so much for trying not to use AI… well, at least I don’t do vibe coding, but that’s a story for another day.
