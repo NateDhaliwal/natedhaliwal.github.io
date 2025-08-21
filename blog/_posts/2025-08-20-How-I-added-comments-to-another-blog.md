@@ -12,7 +12,7 @@ So, I haven’t been posting much recently, but I’m back with a new one – ho
 I’ve always thought – how can I get readers to interact, to ask questions and get responses? Well, I’ve done research into the different softwares that can implement comments, and I’ll also tell you why I opted to make my own from scratch, instead of using an existing one.
 
 ## Existing software – why they just don’t make the cut
-There are *many* commenting softwares out there. Widgets, scripts, etc. But they wouldn’t be too bad, if not for the following reasons:
+There are *many* commenting softwares out there. Widgets, scripts, embeds, etc. But they wouldn’t be too bad, if not for the following reasons:
 
 ### A logo and a paywall
 Sadly, many commenting widgets out there have logos at the bottom. And the “best” part? Removing them is locked behind some sort of paid membership, for example things like Elfsight.
