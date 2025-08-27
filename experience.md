@@ -9,7 +9,7 @@ title: My Skills and Experience
 - CSS
 - JS
   - EmberJS (Learning)
-  - Vanilla JS
+  - Vanilla JS (to a certain degree)
 - Java (Learning)
 - Ruby (Learning)
 
