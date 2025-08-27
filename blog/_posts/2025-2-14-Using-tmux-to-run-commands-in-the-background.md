@@ -2,7 +2,7 @@
 title: "Using tmux to run commands in the background"
 layout: post
 author: NateDhaliwal
-category: bash & terminal
+category: bash-terminal
 tags: [tips & tricks, guide, bash]
 readtime: true
 ---
