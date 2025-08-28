@@ -35,10 +35,13 @@ layout: blog-base
       {% if page.tags.size > 0 %}
         • Tags:
         {% for tag in page.tags %}
-          <a class='tag-link' href="{{ '/blog/tags' | relative_url }}#{{ tag }}">
-            {{ tag }}
+          <a class='tag-link' href="{{ '/blog/tags' | relative_url }}#{{ tag | strip }}">
+            {%- if forloop.last == false -%}
+              {{ tag | strip }},
+            {%- else -%}
+              {{ tag | strip }}
+            {%- endif -%}
           </a>
-            {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {% endif %}
       • {{ page.content | number_of_words | divided_by: 180 }} min read
