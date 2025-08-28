@@ -17,7 +17,11 @@ Programming langauges also have error catching. In HTML, there are no "errors". 
 
 People argue that HTML has a syntax, which makes it a programming language. Arguably, yes, but would you consider a bunch of arrow brackets and letters *syntax*? Yes, it's unique, but it doesn't convey a "feel" of a programming language. To me, it's more like just tags. Not actual code, just tags.
 
-Let's take a look at one more part. Indentation. Most languages are quite picky about indentation and random whitespace. ESLint was catching errors in my code because of *trailing whitespace*. Prettier was making a big fuss of all of this. Python scolds you for not being indented, or for inconsistent indentation. But what about HTML? Indent 10 tabs and it won't matter. 3 spaces and it makes no difference (except that your code would look plain ugly). I don't think this makes it a language. Though, it's debatable 🤷.
+What about printing? You could say that every tag is essentially a print statement, displaying text. In that case, strings are typically defined by quotes, either single or double [^1]. HTML has none of that. Quotes are shown. Typing plain text would normally give you an error in other languages, whereas it's just shown as-is in HTML.
+
+Let's take a look at one more part. Indentation and whitespace. Most languages are quite picky about indentation and random whitespace. ESLint was catching errors in my code because of *trailing whitespace*. Prettier was making a big fuss of all of this. Python scolds you for not being indented, or for inconsistent indentation. But what about HTML? Indent 10 tabs and it won't matter. 3 spaces and it makes no difference (except that your code would look plain ugly). I don't think this makes it a language. Though, it's debatable 🤷‍♂️.
 
 ## Conclusion
-No, no, and a thousand times no. HTML is **not** a language. Look at the evidence! Weird syntax, no loops, not ifs, no variables! It only "prints" stuff. I would not consider it a programming language, and the language's name says 'Markup Language' not 'Programming language'.
+My opinion? HTML is **not** a language. Look at the evidence! Weird syntax, no loops, not ifs, no variables! It only "prints" stuff. I would not consider it a programming language, and the language's name says 'Markup Language' not 'Programming language'.
+
+[^1]: Except Ruby, which has some exceptions like using `%w` or hashes, to some degree.
