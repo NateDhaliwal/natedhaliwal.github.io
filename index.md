@@ -6,7 +6,7 @@ layout: home
 
 I am @NateDhaliwal on pretty much anywhere online, software-related.
 
-You can also find me on [Discourse Meta](https://meta.discourse.org) as [@NateDhaliwal](https://meta.discourse.org/u/NateDhaliwal) (as well as some other Duscourse forums).
+You can also find me on [Discourse Meta](https://meta.discourse.org) as [@NateDhaliwal](https://meta.discourse.org/u/NateDhaliwal) (as well as some other Discourse forums).
 
 I code with Python, HTML, CSS and JS! I'm learning Java, Ruby and SQL. I'm also dabbling in developing Discourse Theme Components, and sometimes, plugins.
 
