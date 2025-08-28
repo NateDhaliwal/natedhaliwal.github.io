@@ -39,11 +39,11 @@ layout: blog-base
           • Tags:
           {% for tag in post.tags %}
             <a class='tag-link' href="{{ '/blog/tags' | relative_url }}#{{ tag | strip }}">
-              {%- if forloop.last == false %}
+              {%- if forloop.last == false -%}
                 {{ tag | strip }},
-              {%- else %}
+              {%- else -%}
                 {{ tag | strip }}
-              {% endif -%}
+              {%- endif -%}
             </a>
               
           {% endfor %}
