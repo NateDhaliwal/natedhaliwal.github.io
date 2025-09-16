@@ -1,5 +1,5 @@
 ---
-title: Creating a Discourse Theme Component: Part 1
+title: "Creating a Discourse Theme Component: Part 1"
 layout: post
 author: NateDhaliwal
 category: discourse
