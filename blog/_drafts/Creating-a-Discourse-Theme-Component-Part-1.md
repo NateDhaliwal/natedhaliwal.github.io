@@ -1,5 +1,5 @@
 ---
-title: "Creating a Discourse Theme Component: Part 1"
+title: "Creating a Discourse Theme Component: Part 1 - Getting Started"
 layout: post
 author: NateDhaliwal
 category: discourse
@@ -23,4 +23,10 @@ Well! This begins the start of a multi-part tutorial to create [Discourse](https
 4. All code will be run and tested on the `tests-passed` Discourse branch, not `stable`. See [this topic](https://meta.discourse.org/t/configure-a-supported-tracking-branch-to-get-discourse-software-updates/17014) for more details on `tests-passed` vs `stable`. Due to more frequent updates, this guide may not be always accurate, but I will try my best to ensure compatibility.
 
 ## Discourse: A quick overview
-This tutorial assumes you know what Discourse is and have used it. If you don't, I breifly explain it now. Discourse is an open-source forum software built on [Ruby on Rails](https://rubyonrails.org) and [Ember.js](https://emberjs.com). 
+This tutorial assumes you know what Discourse is and have used it. If you don't, I breifly explain it now. Discourse is an open-source forum software built on [Ruby on Rails](https://rubyonrails.org) and [Ember.js](https://emberjs.com). It's one of (if not the most) popular and common forum softwares out there. The OpenAI, Google AI for Developers and Unity forums all run on Discourse.
+
+## Actually starting
+Okay, enough chatter. Let's actually begin. 
+
+To create a component, it's good to start with a boilerplate (i.e. template) of a TC, with all the configuration files, directories and relevant files. Thankfully, Discourse has that: the [Discourse Theme Skeleton](https://github.com/discourse/discourse-theme-skeleton) for TCs and the [Discourse Plugin Skeleton](https://github.com/discourse/discourse-plugin-skeleton). Go and pick the Theme one, not the Plugin (we're not doing that here) one. There, you should see this:
+
