@@ -28,5 +28,8 @@ This tutorial assumes you know what Discourse is and have used it. If you don't,
 ## Actually starting
 Okay, enough chatter. Let's actually begin. 
 
-To create a component, it's good to start with a boilerplate (i.e. template) of a TC, with all the configuration files, directories and relevant files. Thankfully, Discourse has that: the [Discourse Theme Skeleton](https://github.com/discourse/discourse-theme-skeleton) for TCs and the [Discourse Plugin Skeleton](https://github.com/discourse/discourse-plugin-skeleton). Go and pick the Theme one, not the Plugin (we're not doing that here) one. There, you should see this:
+In
 
+To create a component, it's good to start with a boilerplate (i.e. template) of a TC, with all the configuration files, directories and relevant files. Thankfully, Discourse has that: the [Discourse Theme Skeleton](https://github.com/discourse/discourse-theme-skeleton) for TCs and the [Discourse Plugin Skeleton](https://github.com/discourse/discourse-plugin-skeleton). Go and pick the Theme one, not the Plugin (we're not doing that here) one. There, you should see this:
+<img width="1896" height="266" alt="image" src="https://github.com/user-attachments/assets/75b0910b-8188-43cc-98f3-83a9ab81535e" />
+Go on and click the green <kbd>Use this template</kbd> button, and 
