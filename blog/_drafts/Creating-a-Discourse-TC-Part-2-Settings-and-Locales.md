@@ -23,7 +23,7 @@ Yes, that's basically it. You can name your setting `setting_name` anything. Bel
 
 Of course, it doesn't stop there. You can add the `textarea: true` to render a string input as a textarea for bigger, multiline strings. Additionally, if you're using numbers, you can specify `min` and `max` attributes.
 
-For a comprehensive list of the different attributes you can use, see Arkshine's [post](https://meta.discourse.org/t/developing-discourse-plugins-part-3-add-custom-site-settings/31115/46?u=natedhaliwal). Make sure to loo in the 'TC Syntax' column and not the 'Plugin Syntax' one!
+For a comprehensive list of the different attributes you can use, see Arkshine's [post](https://meta.discourse.org/t/developing-discourse-plugins-part-3-add-custom-site-settings/31115/46?u=natedhaliwal). Make sure to look in the 'TC Syntax' column and not the 'Plugin Syntax' one!
 
 ## Creating the settings
 Okay, let's start by deleting the `example_setting` inside your `settings.yml` file. Then, go ahead and add this setting:
@@ -34,7 +34,7 @@ featured_user:
 ```
 This will contain the username for the user to be featured.
 
-Then, add this whole thing. Don't worry, I explain them.
+Then, add this whole thing below. Don't worry, I explain them.
 ```yml
 featured_user_banner_text_above:
   default: ""
