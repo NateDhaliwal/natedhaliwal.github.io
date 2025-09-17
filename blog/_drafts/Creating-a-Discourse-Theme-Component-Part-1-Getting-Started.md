@@ -39,4 +39,19 @@ To create a component, it's good to start with a boilerplate (i.e. template) of 
 Go on and click the green <kbd>Use this template</kbd> button, and create the repo!
 
 ## File structure
-Here's the important list of directories in a TC. The organisation and file structure are important - Discourse looks in specific 
+Here's the important list of directories and files in a TC. The organisation and file structure are important - Discourse looks in specific directories for certain files.
+- `common/`: SCSS and HTML files that would appear for both desktop and mobile devices.
+- `mobile/`/`desktop/`: SCSS and HTML files that would appear for the corresponding device categories.
+- `javascripts/`: Where all the logic will go. Files are typically placed in the `discourse/` subdirectory in here.
+- `locales/`: The place for storing all the translations you'll use, like setting descriptions and theme text, as well as the theme description.
+- `scss/`: Optional; this is where SCSS code will be placed, then imported into the relevant file in `common/`, `mobile/` or `desktop/`. Not all themes/TCs have this, but it's good practice.
+- `assets/`: If you have any assets like pictures that come with the TC, they go in here.
+- `about.json`: Compulsory; the file containing the metadata for your TC, like the version number, the author and the About/License URLs.
+- `settings.yml`: If you have any settings for your admins to be able to configure your TC, they go in here. We'll have quite a lot of settings in our TC.
+- `.discourse-compatibility`: Optional; if Discourse core introduces new updates available on certain branches, you can specify commit hashes here to prevent older sites from breaking.
+- Other files: You may see some things like `package.json` or `eslint.config.mjs`, but those aren't compulsory and they mostly help with the Github CI Workflows to test your TC.
+
+Phew! That's quite a lot! Don't worry, we'll explain what each of those do when we get to them. For now, just keep these in mind and make sure you don't misspell any names! It can prevent a number of headaches later on.
+
+## Conclusion
+Unfortunately, all good things must come to an end. We've come to the end of this tutorial, where you created the boilerplate for your TC and got to know the basic structure of it. Read the next part of the tutorial [here]()!
