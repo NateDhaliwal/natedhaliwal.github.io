@@ -28,8 +28,15 @@ This tutorial assumes you know what Discourse is and have used it. If you don't,
 ## Actually starting
 Okay, enough chatter. Let's actually begin. 
 
-In
+In this multipart-tutorial, we'll be recreating my [Featured User](https://meta.discourse.org/t/discourse-featured-user/382304) TC, which shows a banner to display a user's stats along with text. Final product:
+
+<img width="1035" height="340" alt="39d3a700d4ec0cdc5f4177018795d06becda5987_2_1035x340" src="https://github.com/user-attachments/assets/6c9fbab9-b40a-46cc-9639-2d4e68d61fcd" />
 
 To create a component, it's good to start with a boilerplate (i.e. template) of a TC, with all the configuration files, directories and relevant files. Thankfully, Discourse has that: the [Discourse Theme Skeleton](https://github.com/discourse/discourse-theme-skeleton) for TCs and the [Discourse Plugin Skeleton](https://github.com/discourse/discourse-plugin-skeleton). Go and pick the Theme one, not the Plugin (we're not doing that here) one. There, you should see this:
+
 <img width="1896" height="266" alt="image" src="https://github.com/user-attachments/assets/75b0910b-8188-43cc-98f3-83a9ab81535e" />
-Go on and click the green <kbd>Use this template</kbd> button, and 
+
+Go on and click the green <kbd>Use this template</kbd> button, and create the repo!
+
+## File structure
+Here's the important list of directories in a TC. The organisation and file structure are important - Discourse looks in specific 
