@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Random Thoughts
 ---
 
 # Random Thoughts
