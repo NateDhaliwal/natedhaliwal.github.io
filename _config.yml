@@ -33,6 +33,7 @@ permalink: pretty
 header_pages:
   - about.md
   - experience.md
+  - random-thoughts.md
 
 include:
   - blog
