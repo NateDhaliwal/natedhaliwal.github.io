@@ -3,7 +3,6 @@ layout: page
 title: Random Thoughts
 ---
 
-# Random Thoughts
 My mind wanders... to the most banal, mundane and completely irrelevant thoughts. If you're the kind of person who wants to read people's absent-minded thoughts, this page is for you :)
 
 ## Light flickering
