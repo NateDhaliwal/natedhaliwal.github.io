@@ -13,6 +13,7 @@ I code with Python, HTML, CSS and JS! I'm learning Java, Ruby and SQL. I'm also 
 # My projects
 1. [natedhaliwal - My Python PyPi package](https://pypi.org/project/natedhaliwal/)
 2. [Chatroom (Flask) - My current application I'm working on](https://github.com/NateDhaliwal/Chatroom-Flask)
+3. [Clippers - A Markdown & HTML converter and manipulator](https://github.com/NateDhaliwal/clippers)
 
 # Some facts about me!
   - I only started Python and HTML in 2023, but I'm a fast learner and I completed Replit's [100 Days Of Code](https://replit.com/learn/100-days-of-python/hub?utm_source:widget) course! Now I go deeper into Flask and fullstack apps.
