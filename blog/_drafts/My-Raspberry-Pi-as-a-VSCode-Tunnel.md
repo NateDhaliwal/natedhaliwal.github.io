@@ -24,4 +24,11 @@ The criteria for the IDE was as follows:
 Was it possible? Definitely. I just had to look.
 
 ## The Solution
-Now, I have a Raspberry Pi 4B sitting around at home collecting dust.
+Now, I have a Raspberry Pi 4B sitting around at home collecting dust. So what's the best thing to do with it? Well, for 2 years, the answer was either:
+a) Nothing
+b) Discourse Development Environment
+
+Having done a) for about 1-2 years and persisted with b) and failed miserably (too little RAM, and an SD Card, I think), I turned to using it to solve my problem of having no IDE.
+
+### 2 options
+If I wanted to use my Pi
