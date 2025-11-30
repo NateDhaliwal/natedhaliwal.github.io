@@ -31,4 +31,8 @@ b) Discourse Development Environment
 Having done a) for about 1-2 years and persisted with b) and failed miserably (too little RAM, and an SD Card, I think), I turned to using it to solve my problem of having no IDE.
 
 ### 2 options
-If I wanted to use my Pi
+If I wanted to use my Pi to give me an IDE, I had 2 ways of going about things:
+
+#### VSCode Tunnel
+
+#### Remote Host
