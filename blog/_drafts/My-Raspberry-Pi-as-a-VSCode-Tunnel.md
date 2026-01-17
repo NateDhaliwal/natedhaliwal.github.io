@@ -41,3 +41,4 @@ This was my preferred and final choice. Essentially, it opens a tunnel from my P
 To make it run 24/7, I added this to `systemd` as a service, to run in the background. With the help of ChatGPT, I created a Telegram bot (my first, and probably my last) to send me updates of my Pi starts overheating (to err on the side of caution, I set it to remind me if it goes past 50°C.
 
 #### Remote Host
+Remote host works a bit differently. From my understanding, it basically hosts a whole VSCode environment onto localhost/host IP. I didn't choose this because I didn't want a HTTP IP address to be the URL.
