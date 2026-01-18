@@ -11,7 +11,7 @@ Ever since I moved away from Replit, I have been on a hunt for a good place to c
 
 I found [CodeSandbox](https://codesandbox.io) which was (and is) alright, the only downside being that there's usage limits, with 400 credits a month (Pico workspaces cost 5/hour, Nano 10/hour, of course with ascending specs). I used it for a few months, and although I never hit the limits, I wanted to be *free*. To code anywhere. From any device.
 
-Again, Github Codespaces couldn't work out, as I kept hitting limits I never knew where there. So I embarked on a mission to find the perfect solution.
+Again, Github Codespaces couldn't work out, as I kept hitting limits I never knew were there. So I embarked on a mission to find the perfect solution.
 
 ## Criteria for IDE
 The criteria for the IDE was as follows:
@@ -42,3 +42,6 @@ To make it run 24/7, I added this to `systemd` as a service, to run in the backg
 
 #### Remote Host
 Remote host works a bit differently. From my understanding, it basically hosts a whole VSCode environment onto localhost/host IP. I didn't choose this because I didn't want a HTTP IP address to be the URL.
+
+## Final choice
+So, I eventually went with a tunnel.
