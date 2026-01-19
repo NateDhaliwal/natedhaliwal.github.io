@@ -38,10 +38,11 @@ If I wanted to use my Pi to give me an IDE, I had 2 ways of going about things:
 #### VSCode Tunnel
 This was my preferred and final choice. Essentially, it opens a tunnel from my Pi to https://vscode.dev, the online (and minimal) version of VSCode (with no extensions, terminal, etc). However, with the tunnel, I can access my Pi's filesystem, have terminal access to my Pi, and install extensions of my choice.
 
-To make it run 24/7, I added this to `systemd` as a service, to run in the background. With the help of ChatGPT, I created a Telegram bot (my first, and probably my last) to send me updates of my Pi starts overheating (to err on the side of caution, I set it to remind me if it goes past 50°C.
 
 #### Remote Host
 Remote host works a bit differently. From my understanding, it basically hosts a whole VSCode environment onto localhost/host IP. I didn't choose this because I didn't want a HTTP IP address to be the URL.
 
 ## Final choice
-So, I eventually went with a tunnel.
+So, I eventually went with a tunnel. It's easier to go to henwebiste URL than it is to key in an IP address. At least, for me.
+
+To make it run 24/7, I added this to `systemd` as a service, to run in the background. With the help of ChatGPT, I created a Telegram bot (my first, and probably my last) to send me updates of my Pi starts overheating (to err on the side of caution, I set it to remind me if it goes past 50°C.
