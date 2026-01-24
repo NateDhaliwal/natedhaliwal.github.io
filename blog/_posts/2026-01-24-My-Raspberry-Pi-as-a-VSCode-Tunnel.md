@@ -4,6 +4,7 @@ layout: post
 author: NateDhaliwal
 category: general
 tags: [coding & programming, hardware, raspberrypi]
+readtime: true
 ---
 
 ## Introduction
