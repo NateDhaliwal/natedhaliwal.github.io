@@ -6,13 +6,11 @@ category: general
 readtime: true
 ---
 
-I'm NateDhaliwal. I'm starting this blog today! Allow me to introduce myself.
-<br><br>
-I used to be an avid Replit user. [Replit](https://replit.com) is a cloud-based IDE. After shutting down Replit Ask (their support forum), I lost my interest with in and now code in CodeSandbox or local dev.
-<br><br>
-The Replit support forum was made using [Discourse](https://discourse.org), an amazing 100% open-source and free forum software. They are very popular, and have pretty big companies as their customers. You can [self-host your forum]({{ '/blog/discourse/2025/02/13/Tips-for-installing-Discourse/' | relative_url }}) or host it with them (for a price). <br>
+I used to be an avid Replit user. [Replit](https://replit.com) is a cloud-based IDE. After shutting down Replit Ask (their support forum), I lost my interest with it and now in my [VSCode Tunnel]({{ '/blog/general/2026/01/24/My-Raspberry-Pi-as-a-VSCode-Tunnel/' | relative_url }}).
+
+The Replit support forum was made using [Discourse](https://discourse.org), an amazing 100% open-source and free forum software. They are very popular, and have pretty big companies as their customers. You can [self-host your forum]({{ '/blog/discourse/2025/02/13/Tips-for-installing-Discourse/' | relative_url }}) or host it with them (for a price).
 I love Discourse and am a huge fan, so I'm building customizations like Theme Components and Themes. I enjoy the challenge, and since their codename is <big>HUGE</big>, I learn something new everyday.
-<br><br>
-I am a Python full-stack web developer. I know Python, HTML, CSS and JS. I'm currently learning SQL, to help manage databases more effectively.
-<br><br>
+
+I am a Python full-stack web developer. I know Python, HTML, CSS and JS. I'm currently learning SQL, to help manage databases more effectively, and also learning Java, Ruby and C++ (I may be spreading myself too thin there).
+
 I hope to upkeep this blog to continue posting blog posts. Perhaps not like Jeff Atwood, with his incredibly popular blog, [codinghorror](https://blog.codinghorror.com/), but at least to some degree 😉.
