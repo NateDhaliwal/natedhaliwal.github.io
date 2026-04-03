@@ -27,9 +27,7 @@ At this point, it really came down to *which* JS framework I wanted to use. I lo
 
 A quick comparison will actually point you towards React, ironically. But because (yes, again) of my exposure to [Discourse](https://discourse.org), and having developed some customizations in Glimmer templates, I leaned towards Ember a bit more.
 
-This may be debatable, but I felt that Ember seemed 'cleaner' in terms of the syntax. I've never liked React, and after pretty negative experiences with Astro.js (running the blog [I added comments to]({{ '/blog/general/2026/01/24/My-Raspberry-Pi-as-a-VSCode-Tunnel/' | relative_url }})), I wanted a simple framework to step into the JS framework ecosystem (yes, it was my first time).
-
-Again, ironically, React seems to be the more beginner-friendly option, but... I guess I didn't do enough research? JSX does seem simpler than Handlebars at first glance... [^1]
+This may be debatable, but I felt that Ember seemed 'cleaner' in terms of the syntax. I've never liked React, and after pretty negative experiences with Astro.js (running the blog [I added comments to]({{ '/blog/general/2026/01/24/My-Raspberry-Pi-as-a-VSCode-Tunnel/' | relative_url }})), I wanted a simple framework to step into the JS framework ecosystem (yes, it was my first time, and no, not everyone will call Ember 'simple').
 
 One thing that really supported my decision though, was Ember's [EmberData](https://guides.emberjs.com/release/models) - a tool to handle backend API. The thing is that from previously using:
 
@@ -48,4 +46,15 @@ return jsonify({
 An added benefit was that I could add a `to_dict()` method for my database models to represent them in a dictionary (a.k.a. hash) format for APIs, while also being 
 So fortunately or unfortunately, I went with Ember...
 
-[^1]: Of course, it's not viable to switch my framework now. Actually, it technically is, but it'll take a LOT of work.
+## Okay, so I changed it (again)
+Ember? Uhh... well... while doing some research into which framework/library is the best, a clear winner stood out: React. You probably already know what's coming. Yes! So being the impulsive me, I changed the frontend to React with React Router and shadcn/ui.
+
+### Hold on a sec! Shadcn? Really?
+With Ember, I used Bootstrap. I actually was trying (with little success) to move to Tailwind with Ember, but the whole mess of classes, plus the fact that I had to write a whole mobile version for the navbar, pushed me to the faraway, "mystical" shadcn/ui. 
+
+For one thing, the UI is a *lot* cleaner, and I used [shadcn/ui Create](https://ui.shadcn.com/create) to give it a bit more variety of colors besides just white and black.
+
+However, the downside is that the UI looks like it was vibe-coded... since AI loves Tailwind (from my experience), and shadcn/ui uses Tailwind. Plus, I've seen a bunch of AI use shadcn, so... that's certainly a point not in its favor.
+
+### Why React?
+I chose React, because of the HUGE ecosystem for it out there. Ember's ecosystem is more limited, so React was like a whole new world. I spent the first few days just doing pure research into the tools I wanted to use. Radix? Base? (I went with Base) Tanstack Query? SWR? (I went with `fetch()`) 
