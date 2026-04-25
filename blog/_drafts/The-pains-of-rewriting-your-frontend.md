@@ -46,6 +46,8 @@ return jsonify({
 An added benefit was that I could add a `to_dict()` method for my database models to represent them in a dictionary (a.k.a. hash) format for APIs, while also being 
 So fortunately or unfortunately, I went with Ember...
 
+## The migration
+
 ## Okay, so I changed it (again)
 Ember? Uhh... well... while doing some research into which framework/library is the best, a clear winner stood out: React. You probably already know what's coming. Yes! So being the impulsive me, I changed the frontend to React with React Router and shadcn/ui.
 
@@ -57,4 +59,8 @@ For one thing, the UI is a *lot* cleaner, and I used [shadcn/ui Create](https://
 However, the downside is that the UI looks like it was vibe-coded... since AI loves Tailwind (from my experience), and shadcn/ui uses Tailwind. Plus, I've seen a bunch of AI use shadcn, so... that's certainly a point not in its favor.
 
 ### Why React?
-I chose React, because of the HUGE ecosystem for it out there. Ember's ecosystem is more limited, so React was like a whole new world. I spent the first few days just doing pure research into the tools I wanted to use. Radix? Base? (I went with Base) Tanstack Query? SWR? (I went with `fetch()`) 
+I chose React, because of the HUGE ecosystem for it out there. Ember's ecosystem is more limited, so React was like a whole new world. I spent the first few days just doing pure research into the tools I wanted to use. Radix? Base? (I went with Base) Tanstack Query? SWR? (I went with `fetch()`)
+
+Plus, there more support for it out there. With Ember, I found myself turning to AI a lot because of the docs not always explaining everything. With React, everything is really well-documented, and it allowed me to be more focused on my migration.
+
+## The 
