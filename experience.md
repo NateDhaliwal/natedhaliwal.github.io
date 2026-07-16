@@ -5,11 +5,11 @@ title: My Skills and Experience
 
 ## Programming languages
 - Python
-- HTML
-- CSS
+- HTML (is this even counted?)
+- CSS (hmm... is there really a syntax?)
 - JS
   - EmberJS (Learning)
-  - Vanilla JS (to a certain degree)
+  - Vanilla JS (I mean, __duh__)
 - Java (Learning)
 - Ruby (Learning)
 
@@ -20,3 +20,4 @@ title: My Skills and Experience
 - [Discourse](https://discourse.org)
 - [Canva](https://canva.com)
 - [BlueJ](https://bluej.org)
+- Visual Studio Code (🤯)
