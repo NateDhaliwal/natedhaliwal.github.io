@@ -8,15 +8,16 @@ title: My Skills and Experience
 - HTML (is this even counted?)
 - CSS (hmm... is there really a syntax?)
 - JS
-  - EmberJS (Learning)
+  - EmberJS (Some)
   - Vanilla JS (I mean, __duh__)
-- Java (Learning)
+  - React (Some)
+  - Next.js (which uses React)
+- Java
 - Ruby (Learning)
 
 
 ## Tools
-- [Github](https://github.com)
-- [Replit](https://replit.com)
+- [Github](https://github.com) (🤯)
 - [Discourse](https://discourse.org)
 - [Canva](https://canva.com)
 - [BlueJ](https://bluej.org)
