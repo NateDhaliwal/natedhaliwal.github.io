@@ -6,7 +6,7 @@ layout: home
 
 I am @NateDhaliwal on pretty much anywhere online, software-related.
 
-You can also find me on [Discourse Meta](https://meta.discourse.org) as [@NateDhaliwal](https://meta.discourse.org/u/NateDhaliwal) (as well as some other Discourse forums).
+You can also find me on [Discourse Meta](https://meta.discourse.org) as [@NateDhaliwal](https://meta.discourse.org/u/NateDhaliwal) (as well as some other Discourse forums). Or, you can email me at <a href="mailto:natedhaliwaldev@gmail.com">natedhaliwaldev@gmail.com</a>.
 
 I code with Python, HTML, CSS and JS! I'm also know Java and am learning React, Ruby and SQL. I'm also dabbling in developing Discourse Theme Components, and sometimes, plugins.
 
